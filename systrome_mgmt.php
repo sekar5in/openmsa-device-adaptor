@@ -11,7 +11,7 @@
 
 // Script description
 require_once 'smsd/sms_common.php';
-require_once load_once('virtuosys', 'adaptor.php');
+require_once load_once('systrome', 'adaptor.php');
 require_once "$db_objects";
 
 function exit_error($line, $error)

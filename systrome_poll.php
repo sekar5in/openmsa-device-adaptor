@@ -1,6 +1,6 @@
 <?php
 /*
-* virtuosys_poll.php
+* systrome_poll.php
 * Version: $Id$
 * Created: Dec 12, 2018
 * ContecUAE- i2i Telesource pvt ltd
@@ -13,7 +13,7 @@
 
 
 require_once 'smsd/sms_common.php';
-require_once load_once('virtuosys', 'device_connect.php');
+require_once load_once('systrome', 'device_connect.php');
 
 require_once "$db_objects";
 
