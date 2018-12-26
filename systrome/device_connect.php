@@ -24,8 +24,8 @@ class deviceConnection extends SshConnection
   public function do_connect()
   {
     try {
-      //parent::connect("ssh -p 9922 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o NumberOfPasswordPrompts=1 '{$this->sd_login_entry}@{$this->sd_ip_config}'");
-      parent::connect("ssh -p 9922 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o NumberOfPasswordPrompts=1 'demo@122.176.59.218'");
+      parent::connect("ssh -p 9922 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o NumberOfPasswordPrompts=1 '{$this->sd_login_entry}@{$this->sd_ip_config}'");
+      //parent::connect("ssh -p 9922 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o NumberOfPasswordPrompts=1 'demo@122.176.59.218'");
     }
     catch (SmsException $e) {
       // try the alternate port
@@ -70,7 +70,7 @@ function device_connect($sd_ip_addr = null, $login = null, $passwd = null, $admi
 {
   global $sms_sd_ctx;
   
-  //DEVICE_CONNECT 122.176.59.218, demo, Admin@123, Admin@123, 22
+  
   $sms_sd_ctx = new deviceConnection($sd_ip_addr, $login, $passwd, $adminpasswd, $port_to_use);
 
   $net_profile = get_network_profile();

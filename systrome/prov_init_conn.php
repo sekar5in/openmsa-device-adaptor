@@ -11,7 +11,7 @@ function prov_init_conn($sms_csp, $sdid, $sms_sd_info, $stage)
   global $adminpasswd;
   global $port;
   
-  // PROV_INIT_CONN: 122.176.59.218, demo, Admin@123, Admin@123, 22
+  
   $ret =  device_connect($ipaddr, $login, $passwd, $adminpasswd, $port);
   if ($ret != SMS_OK)
   {

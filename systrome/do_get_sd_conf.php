@@ -3,8 +3,8 @@
 // Get router configuration, not JSON response format
 
 require_once 'smsd/sms_common.php';
-require_once load_once('virtuosys', 'device_connect.php');
-require_once load_once('virtuosys', 'device_configuration.php');
+require_once load_once('systrome', 'device_connect.php');
+require_once load_once('systrome', 'device_configuration.php');
 
 try
 {

@@ -21,9 +21,9 @@
 require_once 'smsd/sms_common.php';
 require_once 'smserror/sms_error.php';
 
-require_once load_once('virtuosys', 'adaptor.php');
-require_once load_once('virtuosys', 'device_common.php');
-require_once load_once('virtuosys', 'device_configuration.php');
+require_once load_once('systrome', 'adaptor.php');
+require_once load_once('systrome', 'device_common.php');
+require_once load_once('systrome', 'device_configuration.php');
 require_once "$db_objects";
 
 
@@ -72,7 +72,7 @@ try {
   // -------------------------------------------------------------------------------------
   // Set the provisioning stages
   // -------------------------------------------------------------------------------------
-  require_once load_once('virtuosys', 'provisioning_stages.php');
+  require_once load_once('systrome', 'provisioning_stages.php');
 
   // Reset the provisioning status in the database
   // all the stages are marked "not run"
@@ -97,7 +97,7 @@ try {
   foreach ($provisioning_stages as $provisioning_stage)
   {
     $prog = $provisioning_stage['prog'];
-    include_once load_once('virtuosys', "{$prog}.php");
+    include_once load_once('systrome', "{$prog}.php");
     if (call_user_func_array($prog, array($sms_csp, $sdid, $sms_sd_info, $stage,$provisioning_stage)) !== SMS_OK)
     {
       // Error end of the provisioning

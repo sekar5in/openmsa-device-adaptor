@@ -2,7 +2,7 @@
 // Get generated configuration for the router
 require_once 'smserror/sms_error.php';
 require_once 'smsd/sms_common.php';
-require_once load_once('virtuosys', 'device_configuration.php');
+require_once load_once('systrome', 'device_configuration.php');
 require_once "$db_objects";
 try
 {

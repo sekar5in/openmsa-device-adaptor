@@ -1,6 +1,6 @@
 <?php
 /*
- * Version: $Id: do_checkprovisioning.php 22221 2009-09-30 12:46:20Z tmt $
+ * Version: $Id: do_checkprovisioning.php 22221 2018-09-30 12:46:20Z tmt $
  * Created: Dec 12, 2018
  * ContecUAE- i2i Telesource pvt ltd
  * Name : Dhanasekara Pandian
@@ -18,7 +18,7 @@
 
 require_once 'smsd/sms_common.php';
 
-require_once load_once('virtuosys', 'provisioning_stages.php');
+require_once load_once('systrome', 'provisioning_stages.php');
 
 return require_once 'smsd/do_checkprovisioning.php';
 

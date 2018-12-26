@@ -236,9 +236,11 @@ addManufacturerRepository()
 
 
 ## MAIN PROGRAM STARTS ####
+## MANUFACTURER : systrome
+## Model :	sx600h
 
-addManufacturer contec
-addModel contecwan H
+addManufacturer systrome
+addModel sx600h H
 modelIdentifier
 modelFeatures
 addManufacturerGUI
