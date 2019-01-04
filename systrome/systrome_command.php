@@ -24,7 +24,7 @@ require_once load_once('systrome', 'adaptor.php');
 /**
  *
  */
-class virtuosys_command extends generic_command
+class systrome_command extends generic_command
 {
   var $parser_list;
   var $parsed_objects;
@@ -34,7 +34,7 @@ class virtuosys_command extends generic_command
   var $read_list;
   var $update_list;
   var $configuration;
-  function virtuosys_command()
+  function systrome_command()
   {
     $this->parser_list = array();
     $this->create_list = array();
