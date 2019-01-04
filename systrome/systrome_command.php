@@ -19,7 +19,7 @@ require_once load_once('smsd', 'cmd_update.php');
 require_once load_once('smsd', 'cmd_delete.php');
 require_once load_once('smsd', 'cmd_import.php');
 require_once load_once('smsd', 'cmd_list.php');
-require_once load_once('virtuosys', 'adaptor.php');
+require_once load_once('systrome', 'adaptor.php');
 
 /**
  *
